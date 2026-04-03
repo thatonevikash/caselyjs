@@ -1,12 +1,7 @@
 {
   "name": "caselyjs",
-  "version": "0.1.1",
-  "description": "A minimal renaming tool for setting an uniform naming convetion accross all files, capable of renaming 100+ files in one go.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "rename": "node index.js"
-  },
+  "version": "1.0.0",
+  "description": "Rename codebase files and directories with ease",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codezaura/caselyjs.git"
@@ -24,5 +19,25 @@
   "bugs": {
     "url": "https://github.com/codezaura/caselyjs/issues"
   },
-  "homepage": "https://github.com/codezaura/caselyjs#readme"
+  "homepage": "https://github.com/codezaura/caselyjs#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "casely": "dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin.js",
+    "dev": "ts-node src/bin.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
 }

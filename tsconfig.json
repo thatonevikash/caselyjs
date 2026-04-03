@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ES2022",
+    "module": "nodenext",
+    "allowSyntheticDefaultImports": true,
+
+    "moduleResolution": "nodenext",
+    "lib": ["ES2022"],
+    "declaration": true /* Generates .d.ts files for your library users */,
+    "sourceMap": true /* Helps with debugging */,
+
+    /* Output Settings */
+    "outDir": "./dist" /* Where the compiled JS goes */,
+    "rootDir": "./src" /* Where your TS source lives */,
+    "removeComments": true,
+
+    /* Strictness & Safety */
+    "strict": true /* Ensures high-quality, type-safe code */,
+    "noImplicitAny": true,
+    "esModuleInterop": true /* Fixes compatibility with some older JS packages */,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Path Mapping (Optional) */
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"] /* Only compile files in the src folder */,
+  "exclude": ["node_modules", "dist"]
+}
