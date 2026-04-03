@@ -9,7 +9,7 @@ const index_1 = require("./index");
 const chalk_1 = __importDefault(require("chalk"));
 const program = new commander_1.Command();
 program
-    .name("casely")
+    .name("caselyjs")
     .description("Transform codebase file and directory casing")
     .version("2.0.0")
     .argument("[path]", "Path to process", ".")
