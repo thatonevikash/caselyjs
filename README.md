@@ -1,10 +1,19 @@
-# 🛠️ caselyjs
+<img width="1420" height="640" alt="casely-js" src="https://github.com/user-attachments/assets/9e49a868-c644-4e8b-9c16-5759ffc35969" />
 
-**caselyjs** is a high-performance TypeScript-powered CLI and programmatic utility designed to **rename files and directories** across your entire codebase using consistent naming conventions.
+<br />
 
-> Say goodbye to manually renaming 100+ files in your project!
+<div>
+  <h1>Caselyjs - CLI</h1>
+</div>
 
----
+Tired of Codebases with Mismatched File Casing?🛠️ Meet `CaselyJS (v1.0.1)`
+
+<div>
+<b>caselyjs</> is a high-performance TypeScript-powered CLI and programmatic utility designed to <b>rename files and directories</b> across your entire codebase using consistent naming conventions.</b>
+  <br />
+  <br />
+> <i>Say goodbye to manually renaming 100+ files in your project!</i>
+</div>
 
 ## ✨ New in v1.0
 
@@ -16,36 +25,7 @@
 
 ---
 
-## 📦 Installation
-
-### For CLI usage (Global)
-
-```bash
-npm install -g caselyjs
-```
-
-### For Programmatic usage (Local)
-
-```bash
-npm install caselyjs
-```
-
-## 🚀 CLI Usage
-
-You can now run `caselyjs` directly from your terminal without writing any code.
-
-```bash
-# Basic usage (defaults to kebab-case and .js, .jsx, .ts, .tsx files)
-caselyjs ./src
-
-# Convert to PascalCase including folders
-caselyjs ./src --case pascal --full
-
-# Custom extensions and Dry Run (see changes before they happen)
-caselyjs ./src --ext "js,ts,css" --case camel --dry
-```
-
-## ⚡ Quick Run (No Installation Required)
+## ⚡ The 10-Second Quick Start (No Install Required)
 
 ```bash
 # Rename all .js/ts files in the current folder to kebab-case
@@ -58,15 +38,21 @@ npx caselyjs ./src/components --case pascal --full
 npx caselyjs ./my-project --dry
 ```
 
+> [!IMPORTANT]
+> ```bash
+> # safe command before executing
+> npx caselyjs --dry
+> ```
+
 ### Why this is the "Pro" way to use CaselyJS:
 
 - **No Clutter**: Doesn't stay on the user's machine or in their node_modules.
 
-- **Always Fresh**: npx always pulls the latest version (v2.0.0+), so they get your newest bug fixes and case-identification logic automatically.
+- **Always Fresh**: npx always pulls the latest version (v1.0.0+), so they get your newest bug fixes and case-identification logic automatically.
 
 - **CI/CD Friendly**: Perfect for use in GitHub Actions or automation scripts where you want to enforce a naming convention during a build step without a permanent install.
 
-## CLI Options
+## ⚙️ CLI Options
 
 | Flag     | Shorthand | Description                                 | Default         |
 | :------- | :-------- | :------------------------------------------ | :-------------- |
@@ -95,10 +81,8 @@ await casely.execute();
 
 ## ⚙️ Advanced Configuration
 
-> [!NOTE]\
->
-> - **Recursive by Default**: You only need to provide the root directory. CaselyJS automatically traverses all subdirectories.
-> - **Safety First**: When using operate: "full", CaselyJS uses a bottom-up renaming strategy to ensure directory paths remain valid during the process.
+- **Recursive by Default**: You only need to provide the root directory. CaselyJS automatically traverses all subdirectories.
+- **Safety First**: When using operate: "full", CaselyJS uses a bottom-up renaming strategy to ensure directory paths remain valid during the process.
 
 ### Supported Case Types
 
@@ -112,6 +96,9 @@ await casely.execute();
 - **Commander.js** - Robust CLI argument parsing.
 - **Chalk** - Beautifully colored terminal output.
 
+### 🌐 Links
+- [dev.to](https://dev.to/thatonevikash/tired-of-codebases-with-mismatched-file-casing-meet-caselyjs-v101-479n)
+
 ### 👨‍💻 Author
 
-**Made with ❤️ by _codezaura_**
+**Made with ❤️ by _thatonevikash_**
