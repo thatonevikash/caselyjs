@@ -1,10 +1,11 @@
 {
   "name": "caselyjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "author": "thatonevikash",
   "description": "Rename codebase files and directories with ease",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codezaura/caselyjs.git"
+    "url": "git+https://github.com/thatonevikash/caselyjs.git"
   },
   "keywords": [
     "naming convention tool",
@@ -14,12 +15,18 @@
     "pascal case to camel case",
     "came case to kebab case"
   ],
-  "author": "codezaura",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codezaura/caselyjs/issues"
+    "url": "https://github.com/thatonevikash/caselyjs/issues"
   },
-  "homepage": "https://github.com/codezaura/caselyjs#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "homepage": "https://github.com/thatonevikash/caselyjs#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
